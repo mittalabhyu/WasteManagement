@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Waste Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="{{ url_for('static', filename='img/favicon.ico')}}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body{
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAgIBwgHBwcHBw0HBwcHBw8ICQcNFREWFhURExMYHSggGCYxJxMfITEhMSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDysZFRkrKzc3LTcrLSstLS03LSstLSsrKysrKysrKysrNysrKysrKysrKysrKysrKysrNysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIDBAf/xAAWEAEBAQAAAAAAAAAAAAAAAAAAARH/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAcF/8QAGBEBAQEBAQAAAAAAAAAAAAAAAAECERL/2gAMAwEAAhEDEQA/APpdotVZeQH1o6hqFPpQLDKUCB4kQwoFmsSpBCTpajJgU+a3GozCV0ZrQqFY1orFarJohpmhqgULAYlBCQxqMwlVyQhWG0UU0GR0yimJx0ZprIK6qWhCn1pSsljStFmUygpK0ggP1AiiSspFk1GoIWqmWoWVpVZWtGjRo8C6IGrR4ndJIsAxFMMiSQCgqhLWaihLwJrAzeVRTWawaCQFMnWSzdaMrOkDytaggU6VUmYGKGRmkUKkIKyAGisFFGqgyOqtLKYnWmow1AUlaQhBWIFM1ZqKEnAcTUgGmWcLWJun8OVZpopnLplECmkkLEwKAMaIiBSEogeRNSCRqQKrnKxY0iq8YrNbrNNE9xis1qs0zm0EkKZjUZhA8bhZhhVpSgmEpKMMhkMUagK5yg0gU489ZrdZUcGoymhgp8AaDBxKJMxjUZjUBTJjUEahavmGRqCNQq+YkkB+M1iulYpoluMVlus0zl1GUUKfAUWNIYRCCkiKQH4jEQNDGozGoC2SkgUcMGOlgw/XJcMYMbsFg9TuGA3YMFO5ZRxYxeKGCNQD5jUajMaha6MtQiEF4QkBuis1oUU9MUVpYbqNyxixrFjdL5Zw4cON0ZkYcMhwOnmRiOJjeWSkxTDGYYB81sJAr0YMbwCFyxgxvBgp3LFgsbsZweo3LGLGsWD0nkEmQDTKhiQKwrQNYfTWrWdWtwPTSGrWH0ktGsHUUmZYcUMA0iwogpIA1gZrGKjWTI6RgWsErSCY3p1BBXQA1QxKyMaAp2M4saWCXyMOHFgGmQKRRCs0KgUdUoIS+miygH0UNGtxvTWnWNOtwZpuNRiVqBVs1ppmEq0pZporNWazWqzTIaoSQp9OoJh67agiOrqSTAgaBLUkWbiSVAWWa1WKaJborJBnPqogsWEIVhS0UCS0nWTGaVuVqMRqFq+K6QsRrSunNIqZtYNaVrKtBkNVKIsWJFMfjaCKtK0gmN1JEABSYYhSKLVmsVqs00c+6AkKFJELDEzWmawUVlqsjE6jAYIRqNRiNwtXw3CzCV0RVmtM1oXVASMlTDBGpAp8wooqvAmdWiX01pY063B9NEQwDSlIgeAVpmi1YrNbrJo59xlFClxFIB4KzWqzRhdM0GgyVRgMZo1GozG4Wr4jUShK6JBWK3Wa0JqMooU+GNRmNwKrmFFFWcUzq1RxemiyYxs1uGCNQlXySIQWkQrQYbGKLG2cFHWWcWNYh6n5ZVawVgsYrNbrFNEdM0GgyVUagMActRuMxuFrpxDDihK6ZAzY2LGLcsYMbwYPU/KjUEjUBTMSKBXjypJV8wxqFBVMtRqJErpy0UgWiSQGFFCFOpJCnQKkxNM1ipHjn0zQkZKmFIDZbjcSLXVhuFIjpiCTNRQkJDCkBo0kmO//2Q==");
+  }
+</style>
+</head>
+<nav id="nav" class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a id="f1" class="navbar-brand" href="#">Waste Management </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul id="u1" class="nav navbar-nav"> 
+        <li><a id="color"  href="/">Home</a></li>
+        <li><a id="color" href="/about">About</a></li>
+        <li><a id="color" href="/public">Public</a></li>
+        <li><a id="color">Officials</a></li>
+       </ul>
+      
+    </div>
+  </div>
+</nav>
+<!--<div><h1 class="text-center">WASTE MANAGEMENT</h1></div>-->
+<div class="jumbotron" style="background-color: lightgreen;border:2px solid green;">
+
+<h1 style="text-align: center; color: darkblue;margin-top: 10px;: 0px;"><font size="100">Officials Section<font></font></h1>
+<p id="marquee"> <marquee> "An initiative to clean our city"    </marquee></p>
+
+</div>
+<img id="img2" src="{{ url_for('static', filename='img/slider1.jpg')}}" width="1550">
+<div class="container-fluid">
+   
+ <div class="row-md row-sm row-xs">
+  <div class="col-md-12 div-style">
+	<div class="col-md-6 div-space">
+	<div class="paragraph">
+	<h2  id="headings">Head Login</h2>
+  <br>
+    <div>
+   <center><font size="4">
+  
+    <form action="/head" method="post">
+    Email:<br>
+    <input type="text" name="uname"placeholder="Email">
+    <br>
+    Password:<br>
+    <input type="Password" name="pass"placeholder="Password"><br><br>
+    <input  style="background: lightblue;"type="submit" value="Login">
+  </form>
+  </font></center>
+</div>
+	
+	</div>
+	</div>
+	<div class="col-md-6 div-space">
+	<div class="paragraph">
+	<h2  id="headings">Councilor<br>Login</h2>
+	
+    <div>
+   <center><font size="4">
+  
+    <form action="/ward" method="post">
+    Email:<br>
+    <input type="text" name="uname"placeholder="Email">
+    <br>
+    Password:<br>
+    <input type="Password" name="pass"placeholder="Password"><br><br>
+    <input  style="background: lightblue;"type="submit" value="Login">
+  </form>
+  </font></center>
+</div>
+	</div>
+    </div>
+  
+</div>
+</div>
+
+<div class="row-md row-sm row-xs" >
+  <div class="col-md-12 div-style">
+	<div class="col-md-3 div-space"><img src="{{ url_for('static', filename='img/garbage.jpg')}}" width="282" height="181"/></div>
+  <div class="col-md-3 div-space"><img src="{{ url_for('static', filename='img/kuda.jpg')}}" width="282" height="181"/></div>
+    <div class="col-md-3 div-space"><img src="{{ url_for('static', filename='img/car.jpg')}}" width="282" height="181"/></div>
+  <div class="col-md-3 div-space"><img src="{{ url_for('static', filename='img/recycle.jpg')}}" width="282" height="181" /></div>
+    </div>
+  
+</div>
+
+</div>
+<br>
+
+  <footer class="mastfoot mt-auto" style="background-color: lightgreen;color: black;size: 10px;text-align: center;border:3px solid green;">
+    <div class="inner">
+     <h5><a href="#">@Waste Management</a><p>Government <br>of India</p>
+    </div>
+  </footer>
+</body>
+</html>

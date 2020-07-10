@@ -1,0 +1,79 @@
+
+    <!-- Page Header -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Waste Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="{{ url_for('static', filename='img/favicon.ico')}}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  body{
+    background-color: lightblue;
+  }
+</style>
+</head>
+<div class="jumbotron" style="background-color: lightgreen;border:2px solid green;">
+<h1 style="text-align: center; color: darkblue;margin-top: 10px;: 0px;"><font size="100">Head Panel<br><font size="6"> {{k1[0]["city"]}}</font></h1>
+
+<p id="marquee"> <marquee> "Welcome {{k1[0]["name"]}}"    </marquee></p>
+</div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <font size="4">
+          <h1>Basic Actions</h1>
+
+       <a href="/edit/0"><button class="btn btn-primary">Add New User</button></a>
+       <a href="/logouth"><button class="btn btn-primary">Logout</button></a>
+
+       
+        <hr style="color: black;">
+    
+       <h1>Edit Details of Ward Members</h1>
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Ward No.</th>
+        <th>Complaints</th>
+        <th>Resolved</th>
+        <th>email</th>
+        <th>edit</th>
+      </tr>
+    </thead>
+    <tbody>
+       {% for p in k3 %} 
+      <tr>
+        <td>{{p["name"]}}</td>
+        <td>{{p["ward"]}}</td>
+        <td>{{p["complains"]}}</td>
+        <td>{{p["resolved"]}}</td>
+        <td>{{p["email"]}}</td>
+        <td><a href="#"><button class="btn btn-primary">Edit</button></a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</font>
+         
+        </div>
+      </div>
+    </div>
+  
+  <footer class="mastfoot mt-auto" style="background-color: lightgreen;color: black;size: 10px;text-align: center;border:3px solid green;">
+    <div class="inner">
+     <h5><a href="#">@Waste Management</a><p>Government <br>of India</p>
+    </div>
+  </footer>
+</body>
+</html>
+

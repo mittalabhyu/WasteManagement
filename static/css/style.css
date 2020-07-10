@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{ 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+color:black;
+font-weight:bold;
+font-size:35px;
+
+}
+#c1{
+  color: black;
+  font-size: 15px;
+}
+#img3{
+  padding-right: 30px;
+  align-content: center;
+}
+
+.para1{
+  background-color: lightgreen;
+ 
+}
+.para2{
+  background-color: lightgreen;
+
+ 
+}
+
+#f1{
+  color: darkblue;
+  font-weight: bold;
+}
+#marquee{
+  color: darkblue;
+  size: 150px;
+}
+ul li{
+	font-size:17px;
+	
+}
+.paragraph{
+	background-color:lightgreen;
+	color:black;
+	font-size:3;
+	height:350px;
+}
+.paragraph1{
+  background-color:lightgreen;
+  color:black;
+  font-size:3;
+  height:300px;
+}
+#headings{
+	background-color:lightgreen;
+  padding-top: 10px;
+  text-align: center;size: 7px;
+  color: darkblue;
+}
+#nav{
+  background-color: lightgreen;
+  border:3px solid green;
+}
+#color{
+  color: black;
+}
+.jumbotron{
+  color: lightgreen;
+}
+.navbar-toggle {
+    border-color: green;
+}
+#waste{
+  background-color: lightgreen;
+  height: 300px;
+}
+
+.div-style
+{
+	padding-left:55px;
+	padding-top:50px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-toggle{
+   color: 3px solid green;
+  }
+.div-style
+{
+	padding-left:45px;
+	padding-top:50px;
+}
+.div-space
+{
+	padding:5px;
+}
+.paragraph{
+  background-color:lightgreen;
+  color:black;
+  font-size:3;
+  height:650px;
+}
+.paragraph1{
+  background-color:lightgreen;
+  color:black;
+  font-size:3;
+  height:200px;
+}
+#about-para{
+  height: 600px;
+}
+#color{
+  color: black;
+}
+
+ #img2{
+  width: 100%;
+
+ }
+#pic1{
+  width: 280px;
+  height: 150px;
+  align-content: center;
+}
+}
+@media screen and (max-width: 991px) {
+   .navbar-toggle{
+   color: 3px solid green;
+  }
+.div-style
+{
+  padding-left:20px;
+  padding-top:50px;
+}
+.div-space
+{
+  padding:7px;
+}
+.paragraph{
+  background-color:lightgreen;
+  color:black;
+  font-size:3;
+  height:350px;
+}
+#waste{
+  background-color: lightgreen;
+  height: 800px;
+}
+.paragraph1{
+  background-color:lightgreen;
+  color:black;
+  font-size:3;
+  height:200px;
+}
+
+#color{
+  color: black;
+}
+
+ #img2{
+  width: 100%;
+
+ }
+#about-para{
+  height: 700px;
+}
+}
