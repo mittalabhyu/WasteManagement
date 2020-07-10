@@ -146,5 +146,5 @@ def update():
     qw.update_one({"complains":nn},{'$set':dq})
     qq.insert_one(dic)
     return render_template('ward.html')
-app.run(debug=True)
+
 
